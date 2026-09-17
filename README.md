@@ -62,19 +62,3 @@ assert result["alert"] is True
 
 `guard7702.protocol` exposes `Authorization`, `Account`, `World` and `sign`.
 See `tests/test_protocol.py` for rollback, clearing, nonce and signature examples.
-
-## Testing
-
-```sh
-python -m unittest discover -s tests -v
-```
-
-GitHub Actions is configured to install the package, run tests and check CLI commands on Windows and Linux with Python 3.12 and 3.13. No secrets are required.
-
-## Scope
-
-This is an authorization-phase model, not a complete EVM or outer transaction validator. Execution effects use Python callbacks. Risk alerts are investigation hints, not proof of compromise. Benchmark data are synthetic.
-
-## Upload to GitHub
-
-Upload this repository's contents, including `.github/workflows/tests.yml` and `.gitignore`. Virtual environments, dependencies, caches and generated results are excluded by `.gitignore`. Only source code, tests, sample inputs, package configuration and this usage guide belong in the repository.
