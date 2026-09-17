@@ -1,0 +1,2 @@
+{"id":"normal","universal":false,"unknown_code":false,"code_mismatch":false,"burst":false,"uninitialized":false}
+{"id":"review","universal":true,"unknown_code":true,"code_mismatch":false,"burst":false,"uninitialized":false}

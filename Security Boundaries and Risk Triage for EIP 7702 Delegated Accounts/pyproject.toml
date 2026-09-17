@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "guard7702"
+version = "0.1.0"
+description = "Offline EIP-7702 authorization model and explainable risk scoring"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["eth-keys==0.8.0", "eth-utils==6.0.0", "eth-hash[pycryptodome]==0.8.0", "rlp==5.0.0"]
+
+[project.optional-dependencies]
+test = ["eth-account==0.14.0"]
+
+[project.scripts]
+guard7702 = "guard7702.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["guard7702*"]
